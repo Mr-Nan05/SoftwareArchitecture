@@ -1,0 +1,23 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看学生信息</title>
+    <style>
+        body{text-align:center}
+    </style>
+</head>
+<body>
+<h2>查看学生信息</h2>
+
+<p>id与name只需输入其一</p>
+<form th:object="${student}" method="post">
+
+    <div class="form-group has-feedback">
+        <p>学生学号: <input type="text" th:field="*{id}" /></p>
+        <p>学生姓名: <input type="text" th:field="*{name}" /></p>
+        <p><input type="submit"  value="查看学生" /></p>
+    </div>
+</form>
+</body>>
+</html>
