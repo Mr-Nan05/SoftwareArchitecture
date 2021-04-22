@@ -1,10 +1,15 @@
 package com.nan.manager.model;
 
-
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student {
 
     //@GeneratedValue(strategy=GenerationType.AUTO)
