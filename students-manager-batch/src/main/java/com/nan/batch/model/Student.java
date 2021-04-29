@@ -18,6 +18,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Student implements Serializable{
 
+
+
     @Id
     @Column(name="id")
     private Integer id;
@@ -25,16 +27,41 @@ public class Student implements Serializable{
     @Column(name = "name")
     private String Name;
 
-    @Column(name = "gender")
-    private String Gender;
+    @Column(name = "major")
+    private String Major;
 
-    @Column(name = "birthdate")
-    private String BirthDate;
+    @Column(name = "phone")
+    private String PhoneNumber;
 
-    @Column(name = "nativePlace")
-    private String NativePlace;
+    public String getPhoneNumber() {
+        return PhoneNumber;
+    }
 
-    @Column(name = "department")
-    private String Department;
+    public Integer getId() {
+        return id;
+    }
 
+    public String getMajor() {
+        return Major;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setMajor(String major) {
+        Major = major;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        PhoneNumber = phoneNumber;
+    }
 }

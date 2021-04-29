@@ -29,9 +29,6 @@ public class StudentController {
     private final StudentService studentService;
 
     @Autowired
-    private CacheManager cacheManager;
-
-    @Autowired
     public StudentController(StudentService service) {
         this.studentService = service;
     }
@@ -152,13 +149,4 @@ public class StudentController {
         //return studentService.findAllStudents();
     }
 
-    // clear all cache using cache manager
-    @DeleteMapping(path = "/cache")
-    public @ResponseBody String clearCache() {
-        for (String name : cacheManager.getCacheNames()) {
-            cacheManager.getCache(name).clear();
-        }
-
-        return "clear cache successfully";
-    }
 }
