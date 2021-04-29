@@ -1,8 +1,8 @@
-package com.nan.manager.controller;
+package com.nan.batch.controller;
 
 
-import com.nan.manager.model.Student;
-import com.nan.manager.service.StudentService;
+import com.nan.batch.model.Student;
+import com.nan.batch.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.hateoas.CollectionModel;
