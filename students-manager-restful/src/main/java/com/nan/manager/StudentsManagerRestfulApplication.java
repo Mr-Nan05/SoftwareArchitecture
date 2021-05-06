@@ -20,7 +20,7 @@ public class StudentsManagerRestfulApplication  implements ApplicationRunner {
     public static void main(String... args) {
 //        SpringApplication.run(StudentsManagerRestfulApplication.class, args);
         SpringApplication app = new SpringApplication(StudentsManagerRestfulApplication.class);
-        app.setDefaultProperties(Collections.singletonMap("server.port", "8080"));
+        app.setDefaultProperties(Collections.singletonMap("server.port", "8008"));
         app.run(args);
     }
 
